@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+            <div class="container">
+                <img src="./imgs/logo.png" class="mt-3" alt="logo">
+              <div class="d-flex flex-column ms-3">
+                <a class="navbar-brand" href="#">Weather</a>
+                <a href="#"><small>tagline gose here</small></a>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item mx-3">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">News</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Live cameras</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <section>
+        <div class="hero">
+            <div class="container">
+                    <div class="input-group mg">
+                        <input id="search" type="text" class="form-control" placeholder="find your loctation...">
+                        <button class="btn btn-secondary" type="button" id="button-addon2">find</button>
+                    </div>
+            </div>
+            <section class="w-100 position-absolute">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="item text-white">
+                                <div class="d-flex justify-content-between">
+                                    <p class="pb-5 mt-2" id="today-name">day1</p>
+                                    <span class="mt-2">
+                                        <span id="today-data">30</span>
+                                        <span id="today-data-month">May</span>
+                                    </span>
+                                </div>
+                                    <div class="h4" id="today-loctaion">Dubai</div>
+                                <div>
+                                    <div class="num" id="today-temp">34.3<sup>o</sup>C</div>
+                                    <img src="imgs/113.webp" id="today-img" alt="">
+                                </div>
+                                    <div class="custom text-info" id="today-text">Sunny</div>
+                                <div class="mt-3 det d-flex">
+                                    <div>
+                                        <img src="./imgs/icon-umberella.png" alt="">
+                                        <span id="humidity">20</span>
+                                    </div>
+                                    <div class="mx-3">
+                                        <img src="./imgs/icon-wind.png" alt="">
+                                        <span id="wind">30 km/h</span>
+                                    </div>
+                                    <div>
+                                        <img src="./imgs/icon-compass.png" alt="">
+                                        <span id="wind-diraction">  NNE</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="item text-center mid text-white">
+                                <div>
+                                    <p class="pb-5 mt-2 next-day-name">day2</p>
+                                </div>
+                                <div>
+                                    <img id="next-day-img" src="./imgs/113.webp" alt="">
+                                </div>
+                                <div class="degree  mt-4 next-day-max-temp">36.9<sup>o</sup>C</div>
+                                <small class="next-day-min-temp">32 <sup>o</sup></small>
+                                <div class="custom text-info mt-4 next-day-text">Sunny</div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="item text-center text-white">
+                                <div>
+                                    <p class="pb-5 mt-2 next-day-name">day3</p>
+                                </div>
+                                <div>
+                                    <img id="nex-2d-img" src="./imgs/113.webp" alt="">
+                                </div>
+                                <div class="degree mt-4 next-day-max-temp">36.9<sup>o</sup>C</div>
+                                <small class="next-day-min-temp">32 <sup>o</sup></small>
+                                <div class="custom text-info  mt-4 next-day-text">Sunny</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+    </section>
+
+    <section class="footer mt-5 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <form action="#" class="subscribe-form mt-3">
+                        <input type="text" placeholder="Enter your email to subscribe..." fdprocessedid="aao51n">
+                        <input type="submit" value="Subscribe" fdprocessedid="i71wj">
+                    </form>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="contact-social">
+                        <ul class="d-flex p-0 pe-3 mt-4">
+                            <li><a href="#"><span><i class="fa-brands fa-facebook text-black"></i></span></a></li>
+                            <li class="ms-3"><a href="#"><span><i class="fa-brands fa-instagram text-black"></i></span></a></li>
+                            <li class="ms-3"><a href="#"><span><i class="fa-brands fa-twitter text-black"></i></span></a></li>
+                            <li class="ms-3"><a href="#"><span><i class="fa-brands fa-linkedin text-black"></i></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="colophon m-0 text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
